@@ -6,7 +6,9 @@ html,body,ul,li,img,h1,h2,h3,h4,h5,h6,p,a,i{
 h1,h2,h3,h4,h5,h6{
 	font-weight: 500;
 }
-
+body,html{
+	width: 100%;
+}
 i{
 	font-style: normal;
 }

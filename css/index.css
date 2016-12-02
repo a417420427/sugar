@@ -1,104 +1,134 @@
+/*banner 样式*/
+.banner{
+	height: 340px;
+	width: auto;
+	margin-top: 60px;
+	background: url(../img/1212.jpg) center no-repeat;
+	background-size: 100% 340px;
+}
+.banner>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 /*
- 	头部样式
+ 	maincontent
+ * */
+.main-content{
+	margin-top: 30px;
+}
+.main-content .wrapper.wrapper-950{
+	position: relative;
+}
+.topic-list{
+	float: left;
+	width: 600px;
+}
+.topic-init{}
+.topic-item{
+	position: relative;
+	margin-bottom: 30px;
+	padding-left: 250px;
+	width: 350px;
+	height: 126px;
+}
+.topic-item .cover-area{
+	float: left;
+	margin-left: -250px;
+	width: 230px;
+	height: 100%;
+}
+.topic-item .cover-area>img{
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+.topic-item .datail-area{}
+.topic-item .datail-area .title{
+	line-height: 28px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.datail-area .con-preview{
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 6px;
+	height: 48px;
+	overflow: hidden;
+	color: #999;
+}
+
+.info-area{
+	position: absolute;
+	width: 350px;
+	bottom: 0;
+	right: 0;
+	color: #999;
+}
+.info-area .user{
+	float: left;
+}
+.info-area .favor{
+	float: right;
+}
+
+/*
+ 	右侧固定区域
  * */
 
-header.head{
-	height: 60px;
-	background: #fff;
-}
-.wrapper.wrapper-head{
-	min-height: 1030px;
-	max-height: 1440px;
-}
-.head-menu-left{
-	float: left;
-	margin-left: 40px;
-}
-.head-menu-right{
-	margin-right: 40px;
-	float: right;
-}
-.logo{
-	float: left;
-	width: 47px;
-	height: 24px;
-	margin-right: 18px;
-	margin-top: 18px;
-	background: url(../img/logo.png) no-repeat 0 -23px;
-	background-size: 47px 47px;
-	
-}
-
-.main-nav{
-	float: left;
-	padding-left: 10px;
-}
-.main-nav>li{
-	float: left;
-	line-height: 60px;
-	margin: 0 20px;
-	font-size: 14px;
-}
-.main-nav>li>a{
-	display: block;
-	line-height: 28px;
-	height: 28px;
-	margin: 16px 0;
-	position: relative;
-}
-.main-nav>li>a:after{
-	content: '';
+.topic-category{
 	position: absolute;
-	left: 50%;
-	bottom: 0;
-	display: block;
-	height: 2px;
-	width: 0;
-	background: #fd6363;
-	transition: all .2s;
+	top: 0;
+	right: 0;
+	width: 300px;
+	color: #666;
+}
+.topic-tags>.title{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+.tag-wrap{
+	width: 310px;
+	margin: 10px -5px 30px;
 	
 }
-.main-nav>li>a.current:after{
-	width: 100%;
-	left: 0;
+.tag-wrap>li.tag-item{
+	margin: 10px 5px 0;
+	float: left;
+	padding: 0 15px;
+	line-height: 22px;
+	border: 1px solid #eaeaea;
+	font-size: 14px;
+	border-radius: 12px;
+	cursor: pointer;
 }
-.main-nav>li>a:hover:after{
-	width: 100%;
-	left: 0;
-}
-
-
-.head-menu-right{
-	margin-top: 13px;
-}
-.head-menu-right .login-register{
-	float: right;
-	width: 100px;
-	height: 30px;
-	border-radius: 15px;
+.tag-wrap>li.tag-item:hover{
 	background: #fd6363;
+	border-color: #fd6363;
+}
+.tag-wrap>li.tag-item:hover a{
 	color: #fff;
-	text-align: center;
-	line-height: 30px;
 }
-#search-form{
-	position: relative;
-	margin-right: 30px;
-	float: right;
-}
-#search-form>input{
-	height: 26px;
-	width: 170px;
-	border: 1px solid #bfbfbf;
-	border-radius: 15px;
-	outline: none;
-	line-height: 28px;
-	color: #999;
-	padding-left: 30px;
-	transition: all .5s;
+.tag-wrap>li.tag-item>a{
+	color: #666;
 }
 
-#search-form>input:focus{
-	width: 200px;
+.sugar-app{
+	position: relative;
 }
-/**/
+.sugar-app>img{
+	display: block;
+	width: 300px;
+	height: auto;
+}
+.app-link{
+	display: block;
+	position: absolute;
+	top: 90px;
+	left: 16px;
+	height: 36px;
+	width: 150px;
+}
