@@ -1,0 +1,11 @@
+.wrapper{
+	width: 1030px;
+	margin: 0 auto;
+}
+
+.clearfix{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+}
