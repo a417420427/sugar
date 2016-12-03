@@ -97,13 +97,15 @@
 
 .fd-post-item{
 	position: relative;
+	z-index: 1;
 	margin: 0 5px 10px;
 	float: left;
 	width: 230px;
 	padding: 9px;
 	border: 1px solid #f7f7f7;
 	transition: all .2s;
-	overflow: hidden;
+	background: #fff;
+	
 	cursor: pointer;
 }
 .fd-post-item .cover{
@@ -151,18 +153,17 @@
 	transform: scale(1.02);
 	...box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
-.fd-post-item:after{
+.fd-post-item .tail{
 	position: absolute;
-	content: '';
 	display: block;
-	width: 80%;
+	background: transparent;
+	width: 90%;
 	height: 1px;
 	bottom: 0;
-	left: 10%;
+	left: 5%;
+	z-index: -1;
 	transition: all;
 }
-
-.fd-post-item:hover .fd-post-item:after{
-	box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-	bottom: -10px;
+.fd-post-item:hover .tail{
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
 }
