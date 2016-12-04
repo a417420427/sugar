@@ -39,3 +39,21 @@ function addLoad (func){
 	}
 }
 
+$(function(){
+	var head=$('header.head')
+	head.on('click','.login-register',function(){
+		console.log(head.find('.log-reg-page'))
+		head.find('.log-reg-page').show(200);
+		head.find('.reg-page-inner').animate({
+			top:70
+		},400);
+	})
+	head.on('click','.log-reg-page',function(){
+		
+		head.find('.reg-page-inner').animate({
+			top:40
+		},400,function(){
+			head.find('.log-reg-page').hide(200);
+		});;
+	})
+})

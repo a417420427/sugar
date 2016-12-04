@@ -1,3 +1,9 @@
+.main-nav>li:nth-child(3)>a:after{
+	width: 100%;
+	left: 0;
+}
+
+
 .wrapper.wrapper-960{
 	width:960px;
 	position: relative;

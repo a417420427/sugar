@@ -1,3 +1,8 @@
+.main-nav>li:nth-child(1)>a:after{
+	width: 100%;
+	left: 0;
+}
+
 /*banner 样式*/
 .banner{
 	height: 340px;
